@@ -152,6 +152,46 @@ nav ul li a:hover, nav ul li a:focus {
 /* Section: ABOUT */
 
 /* Section: WORK */
+.work-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.work-project {
+  display: flex;
+  flex-basis: calc( 50% - 1em );
+  margin: .5em;
+  align-items: flex-end;
+  min-height: 150px;
+}
+
+.work-project:first-of-type {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+
+#project-1 {
+  background-image: url( "../images/02-portfolio-1.jpg" );
+}
+#project-2 {
+  background-image: url( "../images/02-portfolio-2.jpg" );
+}
+#project-3 {
+  background-image: url( "../images/02-portfolio-3.jpg" );
+}
+#project-4 {
+  background-image: url( "../images/02-portfolio-4.jpg" );
+}
+#project-5 {
+  background-image: url( "../images/02-portfolio-5.jpg" );
+}
+
+.project-title-container {
+  margin-bottom: 20px;
+  padding: 5px;
+  color: var(--light);
+  background: var(--accent);
+}
 
 /* Section: CONTACT */
 .contact .section-content ul {
@@ -179,4 +219,11 @@ footer {
   color: var(--accent);
   font-weight: bold;
   font-size: 0.77rem;
+}
+
+
+@media only screen and ( max-width: 768px ) {
+  .work-project {
+    flex-basis: 100%;
+  }
 }
