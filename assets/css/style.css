@@ -1,8 +1,25 @@
+/*============================= 
+* 
+* Portfolio Concept Page CSS
+*
+* version 1.0.0
+* author: Alexandra Batrak
+* licence: MIT
+*
+*=============================*/
+
+/* Fonts */
+@import url(https://fonts.bunny.net/css?family=rufina:700);
+
+/*=======================
+* General
+========================*/
 :root {
   --light: white;
   --dark: black;
   --accent: skyblue;
   --base-font: Arial, Helvetica, sans-serif;
+  --accent-font: "Rufina", serif;
 }
 
 * {
@@ -33,3 +50,123 @@ a {
   color: var(--accent);
 }
 
+.bg-image {
+  background-position: center;
+  background-size: cover;
+}
+
+/*=======================
+* Header
+========================*/
+header {
+  width: 100%;
+  background: var(--dark);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo-title-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0 15px;
+  padding: 5px;
+  background: var(--accent);
+  text-align: right;
+  text-transform: lowercase;
+  font-family: var(--accent-font);
+}
+
+.logo-title-wrapper h1 {
+  align-items: flex-end;
+}
+
+/* Navigation */
+nav {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  margin: 0 5px;
+  text-decoration: none;
+  transition:all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  color: var(--light);
+  border-bottom: 2px solid;
+}
+
+/*=======================
+* Hero section
+========================*/
+
+.hero-banner {
+  height: 30vh;
+  background-image: url( "../images/02-hero-bg.jpg" );
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-banner-text {
+  background-color: var(--accent);
+  padding: 15px 25px;
+}
+
+/*=======================
+* Main
+========================*/
+.page-section {
+  display: flex;
+}
+
+.section-title {
+  flex: 0 0 20%;
+  margin: 25px 12.5px;
+  padding: 5px 15px 5px 5px;
+  display: flex;
+  justify-content: flex-end;
+  border-right: 3px solid var(--dark);
+  color: var(--accent);
+  font-family: var(--accent-font);
+  text-transform: lowercase;
+}
+
+.section-content {
+  margin: 25px 12.5px;
+}
+
+
+/* Section: ABOUT */
+
+/* Section: WORK */
+
+/* Section: CONTACT */
+.contact .section-content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.contact .section-content ul li {
+  display: inline-block;
+  margin: 5px;
+}
+/*=======================
+* Footer
+========================*/
