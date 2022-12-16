@@ -1,3 +1,10 @@
+:root {
+  --light: white;
+  --dark: black;
+  --accent: skyblue;
+  --base-font: Arial, Helvetica, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--base-font);
   line-height: 1.5;
 }
 
@@ -21,3 +28,8 @@ h6 {
 p {
   margin: 0;
 }
+
+a {
+  color: var(--accent);
+}
+
