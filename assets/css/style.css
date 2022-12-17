@@ -8,9 +8,6 @@
 *
 *=============================*/
 
-/* Fonts */
-@import url(https://fonts.bunny.net/css?family=elsie:400,900|open-sans:400);
-
 :root {
   /* palette */
 
@@ -360,5 +357,14 @@ footer {
 
   .contact .section-content ul {
     flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition-duration: 0.01ms;
   }
 }
