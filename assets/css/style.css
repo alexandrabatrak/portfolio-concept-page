@@ -65,7 +65,7 @@ a {
 
 /* Backgrounds */
 .bg-image {
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
