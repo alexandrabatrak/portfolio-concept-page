@@ -302,6 +302,7 @@ main {
   margin: .5rem;
   border: .375rem solid var(--light);
   text-decoration: none;
+  overflow: hidden;
 }
 
 .project.bg-overlay::after {
@@ -347,23 +348,6 @@ main {
   color: var(--light);
   background: rgba( var(--dark-rgb), .5);
 }
-
-/* .project::before, .project::after {
-  content:'';
-  position: absolute;
-  left: -.5rem;
-  top: -.5rem;
-  background: linear-gradient(35deg, green, red);
-  width: calc(100% + 1rem);
-  height: calc(100% + 1rem);
-  border-radius: 1.25rem;
-  z-index: -1;
-  animation: border 15s ease-in-out infinite;
-}
-
-.project:hover::after {
-  filter: blur(15px);
-} */
 
 .project-title h3 {
   font-size: 1.25rem;
