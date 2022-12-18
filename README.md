@@ -26,7 +26,7 @@ Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
 - [WCAG Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [WAVE Web accessibility evaluation tool](https://wave.webaim.org/)
 - [BunnyFonts](https://fonts.bunny.net/). 🐇 [Alejandro Inler](mailto:alejandroinler@gmail.com), font 'Elsie' & The Open Sans Project [Authors](https://github.com/googlefonts/opensans)
-- [Emojipedia](https://emojipedia.org/)
+- [FontAwesome](https://fontawesome.com/)
 
 Obtained information:
 - [Detecting touch device with CSS only](https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134)
