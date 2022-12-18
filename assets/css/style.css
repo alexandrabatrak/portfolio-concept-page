@@ -13,7 +13,7 @@
 
   --white:    #F0F0F4;
   --light:    rgb(225, 207, 207);
-  --beige: rgb(128, 115, 116);
+  --beige:    rgb(128, 115, 116);
   --medium:   rgb(95, 77, 81);
   --dark:     rgb(38, 12, 12);
   --accent:   rgb(161, 128, 131);
@@ -23,11 +23,11 @@
 
   /* typography */
   --base-size: 16px;
-  --base-font: 'Open Sans', Arial, sans-serif;
+  --base-font: 'Archivo', Arial, sans-serif;
   --accent-font: 'Elsie', display;
 
   /* other */
-  --b-shadow: var(--accent) 0 0 20px 0px;
+  --b-shadow: rgba(var(--accent-rgb), .7) 0 0 20px 0px;
   --transition: all .5s ease-in-out;
 }
 
@@ -135,7 +135,7 @@ header {
 
 .logo-title-wrapper h1 {
   transition: var(--transition); /* for smooth on-hover effect */
-  animation: glow 5s linear infinite;
+  animation: text-glow 6s linear infinite;
 }
 
 /* Navigation */
@@ -307,7 +307,7 @@ main {
 .about-text-wrapper h3:first-child i:last-of-type {
   font-size: .77rem;
   position: relative;
-  top: -0.25rem;
+  top: -.25rem;
   transform: rotate(345deg);
 }
 
@@ -329,13 +329,6 @@ main {
   display: inline-block;
   margin: .5rem;
   color: var(--accent);
-}
-
-
-.about-text-wrapper ul li:hover {
-  color: var(--dark);
-  margin: .25rem .5rem;
-  transform: scale(1.5);
 }
 
 .team-member {
@@ -361,26 +354,28 @@ main {
 .profile-pic {
   width: 150px;
   height: 150px;
-  border: .125rem solid white;
-  transition: var(--transition);
+  position: relative;
+  border: .05rem solid white;
+  overflow: hidden;
+  z-index: -1;
 }
 
-.profile-pic:hover {
-  box-shadow: var(--b-shadow);
+.profile-pic img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 100%;
+  width: 100%;
 }
 
 #koopa.profile-pic {
-  background-image: url( "../images/koopa.jpg" );
   border-radius: 68% 40% 43% 64% / 54% 38% 48% 50%;
   animation: blob-1 4s infinite;
 }
 
 #kevin.profile-pic {
-  background-image: url( "../images/kevin.jpg" );
   border-radius: 64% 51% 63% 48% / 58% 40% 75% 58%;
   animation: blob-2 4s infinite;
 }
-
 
 /* Section: WORK */
 .projects-wrapper {
@@ -454,6 +449,14 @@ main {
   color: var(--medium);
 }
 
+.project .link-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--white);
+  z-index: 3;
+}
+
 #project-1 {
   background-image: url( "../images/02-portfolio-1.jpg" );
 }
@@ -484,20 +487,20 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .contact .section-content ul li {
   display: inline-block;
-  margin: .375rem;
+  margin: .15rem;
 }
 
 .contact .section-content ul li:nth-child(n+3) {
   font-size: 1.25rem;
 }
 
-.contact .section-content ul li a:hover i {
+.contact .section-content ul li a:hover i,
+.contact .section-content ul li a:focus i {
   color: var(--accent);
 }
 /*=======================
@@ -516,12 +519,12 @@ footer {
 /*=======================
 * Animation
 ========================*/
-@keyframes glow {
+@keyframes text-glow {
   0%, 100% {
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 15px rgba(255, 255, 255,.7);
   }
   50% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 2px rgba(255, 255, 255,.9);
   }
 }
 
@@ -580,19 +583,25 @@ footer {
 
 @keyframes blob-1 {
   0%, 100% { 
-    border-radius: 68% 40% 43% 64% / 54% 38% 48% 50%; 
+    border-radius: 68% 40% 43% 64% / 54% 38% 48% 50%;
+    box-shadow: var(--b-shadow);
+  }
+  25%, 75% {
+    box-shadow: 0 0 1px white;
   }
   50% { 
-    border-radius: 54% 58% 60% 44% / 78% 60% 68% 34%; 
+    border-radius: 54% 58% 60% 44% / 78% 60% 68% 34%;
   }
 }
 
 @keyframes blob-2 {
   0%, 100% { 
-    border-radius: 64% 51% 63% 48% / 58% 40% 75% 58%; 
+    border-radius: 64% 51% 63% 48% / 58% 40% 75% 58%;
+    box-shadow: 0 0 1px white;
   }
   50% { 
-    border-radius: 58% 40% 61% 35% / 60% 70% 28% 31%; 
+    border-radius: 58% 40% 61% 35% / 60% 70% 28% 31%;
+    box-shadow: var(--b-shadow);
   }
 }
 
@@ -601,7 +610,7 @@ footer {
     transform: translateY(0);
   }
   20%, 75% { 
-    transform:  translateY(-97%); /* shifted in mobile view for some reason */
+    transform:  translateY(-99%); /* shifted in mobile view for some reason */
   }
   90%, 100% { 
     transform: translateY(-204%);
@@ -611,7 +620,7 @@ footer {
 /*=======================
 * @media
 ========================*/
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) { 
   .project:first-of-type {
     min-height: 300px;
     flex-basis: 100%;
@@ -671,15 +680,22 @@ footer {
     margin: .5rem 0;
     height: 300px;
   }
+}
 
-  .contact .section-content ul {
-    flex-direction: column;
+@media only screen and (min-width: 576px) {
+  .about-team-wrapper h3 {
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 575.999px) {
   .about .section-content {
     flex-direction: column;
+  }
+
+  .contact .section-content ul,
+  .contact .section-content ul li:not(:nth-child(n+3)) {
+    display: block;
   }
 }
 
@@ -690,10 +706,15 @@ footer {
 }
 
 @media (any-hover: hover) {
-  /* stop logo animation on hover */
+  /* pause logo animation on hover */
   .logo-title-wrapper h1:hover {
-    animation: pause;
-    text-shadow: 0 0 10px white;
+    animation-play-state: paused;
+  }
+
+  .about-text-wrapper ul li:hover {
+    color: var(--dark);
+    margin: .25rem .5rem;
+    transform: scale(1.5);
   }
 
   /* full opacity overlay for hover supporting devices */
@@ -709,7 +730,9 @@ footer {
   .project {
     transition: var(--transition);
   }
-  .project:hover {
+
+  .project:hover,
+  .project:focus {
     border-color: white;
     box-shadow: var(--b-shadow);
   }
@@ -756,9 +779,9 @@ footer {
   html {
     scroll-behavior: auto;
   }
-  * {
+  *,
+  *::after, *::before {
     transition-duration: 0.01ms;
-    animation: none;
+    animation: none !important;
   }
-
 }
