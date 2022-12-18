@@ -19,18 +19,10 @@
     </div>
     <nav>
       <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="#">Resume</a>
-        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -48,80 +40,130 @@
       <div class="section-title">
         <h2>About</h2>
       </div>
-
       <div class="section-content">
         <div class="about-text-wrapper">
+          <h3>Coded with 🐾</h3>
           <p>
-            Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.
-          </p>
-            Sed odio morbi quis commodo odio aenean sed <em>adipiscing</em>. Viverra tellus in hac habitasse platea dictumst vestibulum.
-          </p>
-          <p>
-            Condimentum vitae sapien pellentesque habitant morbi tristique senectus. Interdum posuere lorem ipsum dolor sit amet consectetur.
+            All projects are coded under the strict supervision and paw-some help.
           </p>
           <p>
-            Facilisi nullam vehicula  ipsum a arcu cursus vitae. Id diam maecenas ultricies mi eget mauris pharetra et. Non odio euismod lacinia at quis risus sed vulputate. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Justo laoreet sit amet cursus sit amet dictum.
+            The purrfect source code and design solutions achieved by utilising 
+            ergonomic furry elbow support, comforting purring for demanding deadlines and timely reminder to take nap breaks.
           </p>
+          <p>
+            Tools used on a regular basis to achieve awesomeness:
+            <ul>
+              <li>HTML5, CSS3, SCSS</li>
+              <li>Bootstrap 4, 5 (reduced)</li>
+              <li>Javascript, Jquery</li>
+              <li>Gulp</li>
+              <li>PHP</li>
+              <li>WordPress</li>
+              <li>Node, npm</li>
+              <li>Adobe Creative Suite</li>
+              <li>Coffee</li>
+            </ul>
+          </p>
+          <small>
+            P.S. Staff efforts are always generously rewarded with tasty snacks and cuddles.
+          </small>
+        </div>
+        <div class="about-team-wrapper">
+          <h3>The team</h3>
+          <div class="team-member-wrapper">
+            <div class="team-member">
+              <div id="koopa" class="blob-border profile-pic bg-image"></div>
+              <p>Koopa</p>
+              <span>Comfort Support</span>
+            </div>
+            <div class="team-member">
+              <div id="kevin" class="blob-border profile-pic bg-image"></div>
+              <p>Kevin</p>
+              <span>Assistant Manager</span>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
 
     <!-- portfolio container -->
     <section class="page-section work" id="work">
-      
       <div class="section-title">
         <h2>Work</h2>
       </div>
-      
-      <div class="section-content flex">
-        <a href="https://alexandrabatrak.github.io/horiseon/" target="_blank" id="project-1" class="flex-item bg-image bg-overlay">
+      <div class="section-content projects-wrapper">
+
+        <a href="https://alexandrabatrak.github.io/horiseon/" target="_blank" id="project-1" class="project bg-image bg-overlay">
           <article>
               <div class="project-title">
                 <h3>Horiseon</h3>
                 <p>HTML/CSS</p>
               </div>
+              <div class="project-description">
+                <p>
+                  Bootcamp week 01: html-css-git challenge: improve webpage source code for better accessibility.
+                </p>
+              </div>
           </article>
         </a>
 
-        <a href="https://alexandrabatrak.uk/" target="_blank" id="project-2" class="flex-item bg-image bg-overlay">
+        <a href="https://alexandrabatrak.github.io/portfolio-concept-page/" target="_blank" id="project-2" class="project bg-image bg-overlay">
           <article>
               <div class="project-title">
-                <h3>Personal site</h3>
-                <p>Wordpress</p>
+                <h3>Portfolio Concept</h3>
+                <p>HTML/CSS</p>
+              </div>
+              <div class="project-description">
+                <p>
+                  Bootcamp week 02: advanced-css challenge: Build a portfolio page. 
+                </p>
               </div>
           </article>
         </a>
         
-        <a href="#" id="project-3" class="flex-item bg-image bg-overlay">
+        <a href="#" id="project-3" class="project bg-image bg-overlay">
           <article>
               <div class="project-title">
                 <h3>Pellentesque</h3>
                 <p>React JS</p>
               </div>
+              <div class="project-description">
+                <p>
+                  Placeholder
+                </p>
+              </div>
           </article>
         </a>
         
-        <a href="#" id="project-4" class="flex-item bg-image bg-overlay">
+        <a href="https://alexandrabatrak.uk/" id="project-4" class="project bg-image bg-overlay">
           <article>
               <div class="project-title">
-                <h3>Fermentum</h3>
-                <p>HTML/CSS</p>
+                <h3>Portfolio</h3>
+                <p>Wordpress</p>
+              </div>
+              <div class="project-description">
+                <p>
+                  Personal project: Custom Wordpress theme for a portfolio.
+                </p>
               </div>
           </article>
         </a>
 
-        <a href="#" id="project-5" class="flex-item bg-image bg-overlay">
+        <a href="#" id="project-5" class="project bg-image bg-overlay">
           <article>
               <div class="project-title">
                 <h3>Justo</h3>
                 <p>Node</p>
               </div>
+              <div class="project-description">
+                <p>
+                  Placeholder
+                </p>
+              </div>
           </article>
         </a>
 
       </div>
-
     </section>
 
     <!-- contact -->
@@ -149,11 +191,12 @@
         </ul>
       </div>
     </section>
+
   </main>
 
   <footer>
     <p>🤍 All rights reserved © 2022</p>
   </footer>
-</body>
 
+</body>
 </html>
