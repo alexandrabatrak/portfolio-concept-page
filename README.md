@@ -13,6 +13,8 @@ Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
 - [x] Titled images of applications in "work" section, presented in a flexible layout with the first image larger than the rest
 - [x] Working links to deployed applications
 - [x] Responsive layout
+- [x] Minimal animations
+- [x] Additional animated descriptive content, also accessible for non-touch based devices
 
 [Portfolio Concept Project](https://alexandrabatrak.github.io/portfolio-concept-page/)
 
@@ -25,6 +27,9 @@ Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
 - [WAVE Web accessibility evaluation tool](https://wave.webaim.org/)
 - [BunnyFonts](https://fonts.bunny.net/). 🐇 [Alejandro Inler](mailto:alejandroinler@gmail.com), font 'Elsie' & The Open Sans Project [Authors](https://github.com/googlefonts/opensans)
 - [Emojipedia](https://emojipedia.org/)
+
+Obtained information:
+- [Detecting touch device with CSS only](https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134)
 
 ## License
 
