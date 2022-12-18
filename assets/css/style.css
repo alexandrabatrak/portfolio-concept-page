@@ -784,4 +784,9 @@ footer {
     transition-duration: 0.01ms !important;
     animation: none !important;
   }
+
+  .about-text-wrapper ul li:hover{
+    transform: none;
+    margin: .5rem;
+  }
 }
