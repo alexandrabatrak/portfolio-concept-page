@@ -30,6 +30,7 @@ Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
 
 Obtained information:
 - [Detecting touch device with CSS only](https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134)
+- [Floaties animation inspiration](https://medium.com/@simonpsteer/building-not-so-simple-animations-with-pseudo-elements-ff71d48682a7)
 
 ## License
 
