@@ -13,11 +13,12 @@
 
   --white:    #F0F0F4;
   --light:    rgb(225, 207, 207);
-  --light-bg: rgb(128, 115, 116);
+  /* --light-bg: rgb(128, 115, 116); */
+  --medium:   rgb(95, 77, 81);
   --dark:     rgb(38, 12, 12);
-  --dark-rgb:   38, 12, 12;
   --accent:   rgb(161, 128, 131);
   --accent-rgb: 161, 128, 131;
+  --dark-rgb:   38, 12, 12;
 
 
   /* typography */
@@ -279,7 +280,7 @@ main {
   margin: 1rem .75rem;
 }
 
-.team-member p {
+.team-member h4 {
   margin-top: -2rem;
   padding: .5rem;
   width: fit-content;
@@ -289,7 +290,7 @@ main {
   text-transform: lowercase;
 }
 
-.team-member span {
+.team-member p {
   border-top: .125rem solid var(--light);
   font-style: italic;
 }
@@ -387,7 +388,7 @@ main {
 
 .project-title p {
   margin: 0;
-  color: var(--accent);
+  color: var(--medium);
 }
 
 #project-1 {
@@ -461,10 +462,10 @@ footer {
     transform: translateY(0);
   }
   20%,75% {
-    transform: translateY(-100%);
+    transform: translateY(-100%); /* 96 */ /* this is shifted in mobile view for some reason */
   }
   90%,100% {
-    transform: translateY(-205%);
+    transform: translateY(-205%); /* 200.5 */
   }
 }
 
@@ -545,7 +546,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 575.999px) {
+@media only screen and (min-width: 425px) and (max-width: 575.999px) {
   .team-member-wrapper {
     display: flex;
   }
