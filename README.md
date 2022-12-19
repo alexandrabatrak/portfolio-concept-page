@@ -18,14 +18,14 @@ Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
 
 [Portfolio Concept Project](https://alexandrabatrak.github.io/portfolio-concept-page/)
 
-![Screenshot of Portfolio concept]()
+![Screenshot of Portfolio concept](../images/screenshot.png)
 
 ## Credits
 
 - [Unsplash](https://unsplash.com/) providing images for placeholders.
 - [WCAG Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [WAVE Web accessibility evaluation tool](https://wave.webaim.org/)
-- [BunnyFonts](https://fonts.bunny.net/). 🐇 [Alejandro Inler](mailto:alejandroinler@gmail.com), font 'Elsie' & The Open Sans Project [Authors](https://github.com/googlefonts/opensans)
+- [BunnyFonts](https://fonts.bunny.net/). 🐇 [Alejandro Inler](mailto:alejandroinler@gmail.com), font 'Elsie' || The Archivo Project [Authors](https://github.com/Omnibus-Type/Archivo)
 - [FontAwesome](https://fontawesome.com/)
 
 Obtained information:
