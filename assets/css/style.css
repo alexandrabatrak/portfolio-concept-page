@@ -440,7 +440,7 @@ main {
 .project-description {
   font-weight: 400;
   color: var(--white);
-  background: rgba( var(--dark-rgb), .5);
+  background: rgba( var(--dark-rgb), .7);
 }
 
 .project-title h3 {
