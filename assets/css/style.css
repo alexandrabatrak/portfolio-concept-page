@@ -766,7 +766,7 @@ footer {
     position: absolute;
     left: -.125rem; /* to account for the border */
     background: white;
-    opacity: 0;
+    opacity: .01; /* some screenreaders don't read opacity: 0; */
     transform: translateX(-10%);
     transition: var(--transition);
     z-index: 1;
@@ -797,8 +797,10 @@ footer {
   html {
     scroll-behavior: auto;
   }
+  
   *,
-  *::after, *::before {
+  *::after, 
+  *::before {
     transition-duration: 0.01ms !important;
     animation: none !important;
   }
