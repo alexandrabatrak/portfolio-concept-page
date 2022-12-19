@@ -290,7 +290,6 @@ main {
 }
 
 /* Section: ABOUT */
-
 .about .section-content {
   display: flex;
   flex-direction: row;
@@ -399,7 +398,7 @@ main {
 }
 
 .project.bg-overlay::after {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .project, .project article {
@@ -506,10 +505,10 @@ main {
 .contact .section-content ul li a:focus i {
   color: var(--accent);
 }
+
 /*=======================
 * Footer
 ========================*/
-
 footer {
   display: flex;
   justify-content: center;
