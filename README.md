@@ -18,7 +18,7 @@ Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
 
 [Portfolio Concept Project](https://alexandrabatrak.github.io/portfolio-concept-page/)
 
-![Screenshot of Portfolio concept](../images/screenshot.png)
+![Screenshot of Portfolio concept](./assets/images/screenshot.png)
 
 ## Credits
 
