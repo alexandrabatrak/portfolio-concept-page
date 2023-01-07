@@ -40,4 +40,6 @@ Obtained information:
 
 Licenced under the [MIT](/LICENSE) license.
 
+[![Image of github-profile-views-counter](https://github.com/alexandrabatrak/github-profile-views-counter/blob/master/svg/579040991/badge.svg)](https://github.com/alexandrabatrak/github-profile-views-counter/blob/master/readme/579040991/week.md)
+
 *Copyright © 2022 Alexandra Batrak*
