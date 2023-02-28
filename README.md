@@ -2,7 +2,7 @@
 
 ## About 
 
-Bootcamp week 02: advanced-Css challenge: Build a portfolio page. 🤍
+🤍
 
 *An effective portfolio highlights the strongest work as well as the thought processes behind it.*
 
